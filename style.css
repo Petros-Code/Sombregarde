@@ -250,7 +250,7 @@ html {
 
  .highlight {
    color: var(--gold-light);
-   font-style: italic;
+   /* font-style: italic; */
  }
 
  .schedule-grid {
@@ -552,9 +552,8 @@ html {
   border: 1px solid rgba(201, 168, 76, 0.4);
   background: rgba(201, 168, 76, 0.08);
   color: var(--gold-light);
-  font-size: 1.6rem;
-  font-family: "EB Garamond", serif;
-  line-height: 1;
+  font-size: 1.4rem;
+  font-family: sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -574,14 +573,12 @@ html {
 .lightbox-arrow-prev {
   left: 50%;
   margin-left: -614px;
-  padding-right: 2px;
 }
 
 .lightbox-arrow-next {
   left: 50%;
   margin-left: 566px;
   right: auto;
-  padding-left: 2px;
 }
 
 @media (max-width: 1300px) {
