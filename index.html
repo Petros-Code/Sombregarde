@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sombregarde – Recrutement</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModalOnOverlay(event)">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-corner tl"></div><div class="modal-corner tr"></div>
+    <div class="modal-corner bl"></div><div class="modal-corner br"></div>
+    <div class="modal-header">
+      <div class="modal-header-text">
+        <span class="modal-icon">⚔</span>
+        <div class="modal-title" id="modalTitle">Candidater en jeu</div>
+        <div class="modal-subtitle">Corps Officier de Sombregarde</div>
+      </div>
+      <button class="modal-close" onclick="closeModal()" aria-label="Fermer">✕</button>
+    </div>
+    <div class="modal-body">
+      <p class="modal-instruction">Contacte l'un de nos officiers directement en jeu :</p>
+      <div class="officer-list">
+        <div class="officer-item">
+          <div class="officer-left"><div class="officer-avatar">R</div><span class="officer-name">Razoul</span></div>
+          <span class="officer-command" onclick="copyCommand(this, '/w Razoul Namaste Razoul !')" title="Cliquer pour copier">/w Razoul</span>
+        </div>
+        <div class="officer-item">
+          <div class="officer-left"><div class="officer-avatar">B</div><span class="officer-name">Blond</span></div>
+          <span class="officer-command" onclick="copyCommand(this, '/w Blond Namaste Blond !')" title="Cliquer pour copier">/w Blond</span>
+        </div>
+        <div class="officer-item">
+          <div class="officer-left"><div class="officer-avatar">H</div><span class="officer-name">Horeus</span></div>
+          <span class="officer-command" onclick="copyCommand(this, '/w Horeus Namaste Horeus !')" title="Cliquer pour copier">/w Horeus</span>
+        </div>
+        <div class="officer-item">
+          <div class="officer-left"><div class="officer-avatar">K</div><span class="officer-name">Kalemn</span></div>
+          <span class="officer-command" onclick="copyCommand(this, '/w Kalemn Namaste Kalemn !')" title="Cliquer pour copier">/w Kalemn</span>
+        </div>
+        <div class="officer-item">
+          <div class="officer-left"><div class="officer-avatar">K</div><span class="officer-name">Kisoz</span></div>
+          <span class="officer-command" onclick="copyCommand(this, '/w Kisoz Namaste Kisoz !')" title="Cliquer pour copier">/w Kisoz</span>
+        </div>
+      </div>
+      <div class="modal-note">💡 Clique sur une commande pour la copier, puis colle-la directement dans le chat de WoW.</div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE -->
+<div class="container">
+
+  <div class="banner">
+    <div class="banner-ornament">
+      <div class="ornament-line"></div>
+      <div class="ornament-diamond"></div>
+      <div class="ornament-line"></div>
+    </div>
+    <div class="guild-name">Sombregarde</div>
+    <div class="guild-subtitle">World of Warcraft — Recrutement - Turtle WoW</div>
+    <div class="recruit-badge">⚔ Rejoins nos rangs ⚔</div>
+  </div>
+
+  <!-- QUI SOMMES NOUS ? -->
+  <div class="card">
+    <div class="card-corner tl"></div><div class="card-corner tr"></div>
+    <div class="card-corner bl"></div><div class="card-corner br"></div>
+    <div class="card-title">🛡 Qui sommes-nous ?</div>
+    <p><span class="highlight">Sombregarde</span> est une guilde fondée sur deux piliers indissociables : le<span class="highlight"> Sérieux en raid</span> et une <span class="highlight">communauté soudée</span>. Nous ne cherchons pas à brûler les étapes — notre vision est ancrée sur le <span class="highlight">long terme</span>, construite sur la confiance, le respect et la progression collective.<br><br>Ici, tu trouveras des joueurs sérieux, investis, mais qui savent aussi profiter du jeu et partager de bons moments en raid ou en dehors.</p>
+  </div>
+
+  <!-- HORAIRES -->
+  <div class="card">
+    <div class="card-corner tl"></div><div class="card-corner tr"></div>
+    <div class="card-corner bl"></div><div class="card-corner br"></div>
+    <div class="card-title">🗓 Horaires de Raid</div>
+    <p>Nos soirées de raid sont fixes, anticipées à l'avance. La régularité et la ponctualité font partie de nos valeurs fondamentales.</p>
+    <div class="schedule-grid">
+      <div class="schedule-day">
+        <span class="day-name">Lundi</span>
+        <span class="day-time">21h – 00h00</span>
+        <span class="day-duration">3h de raid</span>
+      </div>
+      <div class="schedule-day">
+        <span class="day-name">Mercredi</span>
+        <span class="day-time">21h – 00h00</span>
+        <span class="day-duration">3h de raid</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Système de Loot -->
+  <div class="card">
+    <div class="card-corner tl"></div><div class="card-corner tr"></div>
+    <div class="card-corner bl"></div><div class="card-corner br"></div>
+    <div class="card-title">💰 Système de Loot ?</div>
+    <p>Notre <span class="highlight">système</span><span class="highlight"><span class="highlight"><span class="highlight"></p>
+  </div>
+
+  <!-- PERFORMANCES EN RAID -->
+  <div class="card">
+    <div class="card-corner tl"></div><div class="card-corner tr"></div>
+    <div class="card-corner bl"></div><div class="card-corner br"></div>
+    <div class="card-title">⚔ Performances en Raid</div>
+    <p>Nos raids sont organisés, préparés et menés avec rigueur. Nous avons cleané de nombreux contenus de façon <span class="highlight">propre et efficace</span>, sans s'éterniser. Le travail d'équipe, la connaissance des mécaniques et les consommables ne sont pas une option — c'est notre standard sur les raids du palier en cours.</p>
+    <br>
+    <ul class="progress-list">
+      <li>Contenu cleared proprement</li>
+      <li>Progression rapide et organisée</li>
+      <li>Calls clairs et préparation sérieuse</li>
+      <li>Logs & amélioration continue</li>
+      <li>Ambiance focus sans toxicité</li>
+      <li>Vision long terme sur le contenu</li>
+    </ul>
+  </div>
+
+  <!-- LA COMMUNAUTE -->
+  <div class="card">
+    <div class="card-corner tl"></div><div class="card-corner tr"></div>
+    <div class="card-corner bl"></div><div class="card-corner br"></div>
+    <div class="card-title">🏰 Une Vraie Communauté</div>
+    <p>Au-delà des raids, <span class="highlight">Sombregarde c'est une famille</span>. On se retrouve en dehors des soirées officielles, on s'entraide, on rit, on joue ensemble. Rejoindre la guilde, c'est rejoindre un groupe de joueurs qui partagent la même passion — et ça, aucun <em>parse</em> ne peut le mesurer.</p>
+  </div>
+
+  <!-- AVANTAGES & INFRASTRUCTURES -->
+  <div class="card">
+    <div class="card-corner tl"></div><div class="card-corner tr"></div>
+    <div class="card-corner bl"></div><div class="card-corner br"></div>
+    <div class="card-title">✦ Avantages & Infrastructures</div>
+    <div class="perks-grid">
+      <div class="perk-item"><span class="perk-icon">🏠</span><span><strong>Maison de guilde</strong> — La Chapelle de la Lumière saura vous accueillir comme il se doit</span></div>
+      <div class="perk-item"><span class="perk-icon">🏦</span><span><strong>Banque de guilde</strong> — Ressources mutualisées, accès à diverses ressources</span></div>
+      <div class="perk-item"><span class="perk-icon">🤝</span><span><strong>Entraide active</strong> — Crafts, donjons, quêtes… toujours quelqu'un pour aider</span></div>
+      <div class="perk-item"><span class="perk-icon">📅</span><span><strong>Planning structuré</strong> — Organisation des raids sur discord via Raid-helper</span></div>
+    </div>
+  </div>
+
+  <!-- OUTILS -->
+  <div class="tools-card">
+    <div class="card-corner tl"></div><div class="card-corner tr"></div>
+    <div class="card-corner bl"></div><div class="card-corner br"></div>
+    <div class="card-title">🔧 Nos Outils</div>
+    <div class="tools-tabs" role="tablist" aria-label="Aperçu des outils de gestion du roster">
+      <button class="tools-tab is-active" data-tab="1" role="tab" aria-selected="true">Raids</button>
+      <button class="tools-tab" data-tab="2" role="tab" aria-selected="false">Loot</button>
+      <button class="tools-tab" data-tab="3" role="tab" aria-selected="false">Calendrier</button>
+      <button class="tools-tab" data-tab="4" role="tab" aria-selected="false">Présences</button>
+      <button class="tools-tab" data-tab="5" role="tab" aria-selected="false">Comps</button>
+    </div>
+    <div class="tools-preview">
+      <div class="tools-preview-inner">
+        <img src="images/raids.png" alt="Aperçu outil 1" class="tools-image is-active" data-tab-content="1">
+        <img src="images/Loot.png" alt="Aperçu outil 2" class="tools-image" data-tab-content="2">
+        <img src="images/Calendar.png" alt="Aperçu outil 3" class="tools-image" data-tab-content="3">
+        <img src="images/Presences.png" alt="Aperçu outil 4" class="tools-image" data-tab-content="4">
+        <img src="images/Comp.png" alt="Aperçu outil 5" class="tools-image" data-tab-content="5">
+      </div>
+      <p class="tools-preview-hint">Clique sur un onglet pour voir un screenshot de notre outil de gestion de guilde.</p>
+    </div>
+  </div>
+
+  <div class="cta-card">
+    <div class="card-corner tl"></div><div class="card-corner tr"></div>
+    <div class="card-corner bl"></div><div class="card-corner br"></div>
+    <div class="cta-title">Prêt à rejoindre la Sombregarde ?</div>
+    <p class="cta-text">Si tu cherches une guilde où sérieux rime avec plaisir, où chaque victoire est collective et où tu peux t'inscrire dans quelque chose qui dure — ta place est parmi nous.</p>
+    <div class="btn-group">
+      <button class="cta-contact" onclick="openModal()">⚔ Candidater en jeu</button>
+      <a class="cta-discord-btn" href="https://discord.gg/eQzxYHnK" target="_blank" rel="noopener">
+        <svg class="discord-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.03.056a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/>
+        </svg>
+        Rejoindre le Discord
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-ornament">
+    <div class="banner-ornament footer-banner-ornament">
+      <div class="ornament-line"></div>
+      <div class="ornament-diamond"></div>
+      <div class="ornament-line"></div>
+    </div>
+    <span>Sombregarde • Là où convivialité et performance se rejoignent</span>
+  </div>
+
+</div>
+
+<div class="image-lightbox-overlay" id="imageLightbox">
+  <button class="lightbox-arrow lightbox-arrow-prev" id="lightboxPrev" aria-label="Image précédente">&lt;</button>
+  <div class="image-lightbox-inner">
+    <img src="" alt="" class="image-lightbox-img" id="imageLightboxImg">
+  </div>
+  <button class="lightbox-arrow lightbox-arrow-next" id="lightboxNext" aria-label="Image suivante">&gt;</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
